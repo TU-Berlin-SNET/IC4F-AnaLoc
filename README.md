@@ -1,5 +1,5 @@
 # AnaLoc - Streaming and Batch Sensor Data Analysis
-<sup><sub>Authors: Yong Wu, Hai Dinh Tuan, Felix Beierle</sup></sub>
+<sup><sub>Authors: [Yong Wu](https://github.com/wustudent), [Hai Dinh Tuan](https://github.com/haidinhtuan), [Felix Beierle](https://github.com/fbeierle)</sup></sub>
 
 AnaLoc is a sensor data analysis software package by TU-Berlin SNET, developed in the context of IC4F.
 
@@ -7,10 +7,10 @@ AnaLoc is a sensor data analysis software package by TU-Berlin SNET, developed i
 
 Table of contents of this README:
 
-1. Development environment setup and running the code
-2. Testing
-3. Module descriptions and deployment configurations
-4. Interfaces
+1. [Development environment setup and running the code](#1-development-environment-setup-and-running-the-code)
+2. [Testing](#2-testing)
+3. [Module descriptions and deployment configurations](#3-module-descriptions-and-deployment-configurations)
+4. [Interfaces](#4-interfaces)
 
 ---
 
@@ -276,7 +276,7 @@ POST {url here}:8222/heatmap
 Handles `application/json`.
 
 |Type|Name|Description|
-|---|---|---|---|
+|---|---|---|
 |**Body**|**request**  <br>*required*|Object that describe the required resolution and time range of the heatmap|
 
 |Name|Schema|
