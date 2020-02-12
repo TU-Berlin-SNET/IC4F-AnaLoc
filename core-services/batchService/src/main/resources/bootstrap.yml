@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: Batch-Service
+server:
+  port: 8222

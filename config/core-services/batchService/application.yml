@@ -1,0 +1,51 @@
+spring:
+  boot:
+    admin:
+      client:
+        instance:
+          service-base-url: http://monitor-service:8888
+          name: batch-service
+  influx:
+    url: http://influxdb:8086     # replace here by real InfluxDB host name
+    user: gzzg                    # replace here by real username
+    password: qweasd1234          # replace here by real password
+  mvc:
+    async:
+      request-timeout: 30000      # replace by timeout (unit: ms)
+  zipkin:
+    base-url: http://zipkin-service:9411/
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 0.1
+
+eureka:
+  instance:
+    preferIpAddress: true
+    hostname: batch-service
+  client:
+    service-url:
+      defaultZone: http://discovery-service:8761/eureka
+
+#*********************************************************#
+# replace followings by real map limits of the arena2036: #
+#*********************************************************#
+map:
+  xMin: -1                         # minimum limit of x in the map
+  xMax: 28                        # maximum limit of x in the map
+  yMin: -1                         # minimum limit of y in the map
+  yMax: 28                        # maximum limit of y in the map
+
+#*********************************************************#
+# replace followings by real configurations of InfluxDB:  #
+#*********************************************************#
+influxDBconf:
+  dbName: ArenaEmulator           # database name
+  measurement: dataFrame          # table name
+  positionX: position.x           # column name for positionX
+  positionY: position.y           # column name for positionY
+  vehicleId: vehicleId            # column name for vehicleId
+  deltaDistance: delta_distance   # column name for delta distance
+  deltaTime: delta_t              # column name for delta time
+  speedFactor: 1000000            # speedFactor for unit conversion 10e6 because use nano second for time

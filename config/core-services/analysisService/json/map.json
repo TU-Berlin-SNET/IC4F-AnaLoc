@@ -1,0 +1,1965 @@
+{
+  "header": {
+    "$ACADVER": "AC1021",
+    "$ACADMAINTVER": 25,
+    "$DWGCODEPAGE": "ANSI_936",
+    "$INSBASE": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$EXTMIN": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$EXTMAX": {
+      "x": 594,
+      "y": 420,
+      "z": 0
+    },
+    "$LIMMIN": {
+      "x": 0,
+      "y": 0
+    },
+    "$LIMMAX": {
+      "x": 594,
+      "y": 420
+    },
+    "$ORTHOMODE": 0,
+    "$REGENMODE": 1,
+    "$FILLMODE": 1,
+    "$QTEXTMODE": 0,
+    "$MIRRTEXT": 1,
+    "$LTSCALE": 1,
+    "$ATTMODE": 1,
+    "$TEXTSIZE": 2.5,
+    "$TRACEWID": 1,
+    "$TEXTSTYLE": "Standard",
+    "$CLAYER": "0",
+    "$CELTYPE": "ByLayer",
+    "$CECOLOR": 256,
+    "$CELTSCALE": 1,
+    "$DISPSILH": 0,
+    "$DIMSCALE": 1,
+    "$DIMASZ": 2.5,
+    "$DIMEXO": 0.625,
+    "$DIMDLI": 3.75,
+    "$DIMRND": 0,
+    "$DIMDLE": 0,
+    "$DIMEXE": 1.25,
+    "$DIMTP": 0,
+    "$DIMTM": 0,
+    "$DIMTXT": 2.5,
+    "$DIMCEN": 2.5,
+    "$DIMTSZ": 0,
+    "$DIMTOL": 0,
+    "$DIMLIM": 0,
+    "$DIMTIH": 0,
+    "$DIMTOH": 0,
+    "$DIMSE1": 0,
+    "$DIMSE2": 0,
+    "$DIMTAD": 1,
+    "$DIMZIN": 8,
+    "$DIMBLK": "",
+    "$DIMASO": 1,
+    "$DIMSHO": 1,
+    "$DIMPOST": "",
+    "$DIMAPOST": "",
+    "$DIMALT": 0,
+    "$DIMALTD": 3,
+    "$DIMALTF": 0.0393700787,
+    "$DIMLFAC": 1,
+    "$DIMTOFL": 1,
+    "$DIMTVP": 0,
+    "$DIMTIX": 0,
+    "$DIMSOXD": 0,
+    "$DIMSAH": 0,
+    "$DIMBLK1": "",
+    "$DIMBLK2": "",
+    "$DIMSTYLE": "ISO-25",
+    "$DIMCLRD": 0,
+    "$DIMCLRE": 0,
+    "$DIMCLRT": 0,
+    "$DIMTFAC": 1,
+    "$DIMGAP": 0.625,
+    "$DIMJUST": 0,
+    "$DIMSD1": 0,
+    "$DIMSD2": 0,
+    "$DIMTOLJ": 0,
+    "$DIMTZIN": 8,
+    "$DIMALTZ": 0,
+    "$DIMALTTZ": 0,
+    "$DIMUPT": 0,
+    "$DIMDEC": 2,
+    "$DIMTDEC": 2,
+    "$DIMALTU": 2,
+    "$DIMALTTD": 3,
+    "$DIMTXSTY": "Standard",
+    "$DIMAUNIT": 0,
+    "$DIMADEC": 0,
+    "$DIMALTRND": 0,
+    "$DIMAZIN": 0,
+    "$DIMDSEP": 44,
+    "$DIMATFIT": 3,
+    "$DIMFRAC": 0,
+    "$DIMLDRBLK": "",
+    "$DIMLUNIT": 2,
+    "$DIMLWD": -2,
+    "$DIMLWE": -2,
+    "$DIMTMOVE": 0,
+    "$DIMFXL": 1,
+    "$DIMFXLON": 0,
+    "$DIMJOGANG": 0.7853981634,
+    "$DIMTFILL": 0,
+    "$DIMTFILLCLR": 0,
+    "$DIMARCSYM": 0,
+    "$DIMLTYPE": "",
+    "$DIMLTEX1": "",
+    "$DIMLTEX2": "",
+    "$LUNITS": 2,
+    "$LUPREC": 4,
+    "$SKETCHINC": 1,
+    "$FILLETRAD": 10,
+    "$AUNITS": 0,
+    "$AUPREC": 0,
+    "$MENU": ".",
+    "$ELEVATION": 0,
+    "$PELEVATION": 0,
+    "$THICKNESS": 0,
+    "$LIMCHECK": 0,
+    "$CHAMFERA": 0,
+    "$CHAMFERB": 0,
+    "$CHAMFERC": 0,
+    "$CHAMFERD": 0,
+    "$SKPOLY": 0,
+    "$TDCREATE": 2458445.665462153,
+    "$TDUCREATE": 2458445.623795486,
+    "$TDUPDATE": 2458445.665462523,
+    "$TDUUPDATE": 2458445.623795856,
+    "$TDINDWG": 1.16e-8,
+    "$TDUSRTIMER": 1.16e-8,
+    "$USRTIMER": 1,
+    "$ANGBASE": 0,
+    "$ANGDIR": 0,
+    "$PDMODE": 0,
+    "$PDSIZE": 0,
+    "$PLINEWID": 0,
+    "$SPLFRAME": 0,
+    "$SPLINETYPE": 6,
+    "$SPLINESEGS": 8,
+    "$HANDSEED": "F9",
+    "$SURFTAB1": 6,
+    "$SURFTAB2": 6,
+    "$SURFTYPE": 6,
+    "$SURFU": 6,
+    "$SURFV": 6,
+    "$UCSBASE": "",
+    "$UCSNAME": "",
+    "$UCSORG": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$UCSXDIR": {
+      "x": 1,
+      "y": 0,
+      "z": 0
+    },
+    "$UCSYDIR": {
+      "x": 0,
+      "y": 1,
+      "z": 0
+    },
+    "$UCSORTHOREF": "",
+    "$UCSORTHOVIEW": 0,
+    "$UCSORGTOP": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$UCSORGBOTTOM": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$UCSORGLEFT": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$UCSORGRIGHT": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$UCSORGFRONT": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$UCSORGBACK": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$PUCSBASE": "",
+    "$PUCSNAME": "",
+    "$PUCSORG": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$PUCSXDIR": {
+      "x": 1,
+      "y": 0,
+      "z": 0
+    },
+    "$PUCSYDIR": {
+      "x": 0,
+      "y": 1,
+      "z": 0
+    },
+    "$PUCSORTHOREF": "",
+    "$PUCSORTHOVIEW": 0,
+    "$PUCSORGTOP": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$PUCSORGBOTTOM": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$PUCSORGLEFT": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$PUCSORGRIGHT": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$PUCSORGFRONT": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$PUCSORGBACK": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$USERI1": 0,
+    "$USERI2": 0,
+    "$USERI3": 0,
+    "$USERI4": 0,
+    "$USERI5": 0,
+    "$USERR1": 0,
+    "$USERR2": 0,
+    "$USERR3": 0,
+    "$USERR4": 0,
+    "$USERR5": 0,
+    "$WORLDVIEW": 1,
+    "$SHADEDGE": 3,
+    "$SHADEDIF": 70,
+    "$TILEMODE": 1,
+    "$MAXACTVP": 64,
+    "$PINSBASE": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$PLIMCHECK": 0,
+    "$PEXTMIN": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "$PEXTMAX": {
+      "x": 594,
+      "y": 420,
+      "z": 0
+    },
+    "$PLIMMIN": {
+      "x": 0,
+      "y": 0
+    },
+    "$PLIMMAX": {
+      "x": 594,
+      "y": 420
+    },
+    "$UNITMODE": 0,
+    "$VISRETAIN": 1,
+    "$PLINEGEN": 0,
+    "$PSLTSCALE": 1,
+    "$TREEDEPTH": 3020,
+    "$CMLSTYLE": "Standard",
+    "$CMLJUST": 0,
+    "$CMLSCALE": 20,
+    "$PROXYGRAPHICS": 1,
+    "$MEASUREMENT": 1,
+    "$CELWEIGHT": -1,
+    "$ENDCAPS": 0,
+    "$JOINSTYLE": 0,
+    "$LWDISPLAY": false,
+    "$INSUNITS": 4,
+    "$HYPERLINKBASE": "",
+    "$STYLESHEET": "",
+    "$XEDIT": true,
+    "$CEPSNTYPE": 0,
+    "$PSTYLEMODE": true,
+    "$FINGERPRINTGUID": "{e8cb4c1c-a4e6-4c44-bb25-f8ee8b3be1fe}",
+    "$VERSIONGUID": "{FAEB1C32-E019-11D5-929B-00C0DF256EC4}",
+    "$EXTNAMES": true,
+    "$PSVPSCALE": 0,
+    "$OLESTARTUP": false,
+    "$SORTENTS": 127,
+    "$INDEXCTL": 0,
+    "$HIDETEXT": 1,
+    "$XCLIPFRAME": false,
+    "$HALOGAP": 0,
+    "$OBSCOLOR": 257,
+    "$OBSLTYPE": 0,
+    "$INTERSECTIONDISPLAY": 0,
+    "$INTERSECTIONCOLOR": 257,
+    "$DIMASSOC": 2,
+    "$PROJECTNAME": "",
+    "$CAMERADISPLAY": false,
+    "$LENSLENGTH": 50,
+    "$CAMERAHEIGHT": 0,
+    "$STEPSPERSEC": 2,
+    "$STEPSIZE": 6,
+    "$3DDWFPREC": 2,
+    "$PSOLWIDTH": 5,
+    "$PSOLHEIGHT": 80,
+    "$LOFTANG1": 1.5707963268,
+    "$LOFTANG2": 1.5707963268,
+    "$LOFTMAG1": 0,
+    "$LOFTMAG2": 0,
+    "$LOFTPARAM": 7,
+    "$LOFTNORMALS": 1,
+    "$LATITUDE": 37.795,
+    "$LONGITUDE": -122.394,
+    "$NORTHDIRECTION": 0,
+    "$TIMEZONE": -8000,
+    "$LIGHTGLYPHDISPLAY": 1,
+    "$TILEMODELIGHTSYNCH": 1,
+    "$CMATERIAL": "44",
+    "$SOLIDHIST": 0,
+    "$SHOWHIST": 1,
+    "$DWFFRAME": 2,
+    "$DGNFRAME": 2,
+    "$REALWORLDSCALE": true,
+    "$INTERFERECOLOR": 256,
+    "$CSHADOW": 0,
+    "$SHADOWPLANELOCATION": 0
+  },
+  "tables": {
+    "viewPort": {
+      "handle": "8",
+      "ownerHandle": "0",
+      "viewPorts": [
+        {
+          "ownerHandle": "8",
+          "name": "*Active",
+          "lowerLeftCorner": {
+            "x": 0,
+            "y": 0
+          },
+          "upperRightCorner": {
+            "x": 1,
+            "y": 1
+          },
+          "center": {
+            "x": 344.1869158879,
+            "y": 148.5
+          },
+          "snapBasePoint": {
+            "x": 0,
+            "y": 0
+          },
+          "snapSpacing": {
+            "x": 10,
+            "y": 10
+          },
+          "gridSpacing": {
+            "x": 10,
+            "y": 10
+          },
+          "viewDirectionFromTarget": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "viewTarget": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "lensLength": 50,
+          "frontClippingPlane": 0,
+          "backClippingPlane": 0,
+          "snapRotationAngle": 0,
+          "viewTwistAngle": 0,
+          "renderMode": 0,
+          "ucsOrigin": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ucsXAxis": {
+            "x": 1,
+            "y": 0,
+            "z": 0
+          },
+          "ucsYAxis": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "orthographicType": 0,
+          "defaultLightingOn": true,
+          "ambientColor": 250
+        }
+      ]
+    },
+    "lineType": {
+      "handle": "5",
+      "ownerHandle": "0",
+      "lineTypes": {
+        "ByBlock": {
+          "name": "ByBlock",
+          "description": "",
+          "patternLength": 0
+        },
+        "ByLayer": {
+          "name": "ByLayer",
+          "description": "",
+          "patternLength": 0
+        },
+        "Continuous": {
+          "name": "Continuous",
+          "description": "Solid line",
+          "patternLength": 0
+        }
+      }
+    },
+    "layer": {
+      "handle": "2",
+      "ownerHandle": "0",
+      "layers": {
+        "0": {
+          "name": "0",
+          "frozen": false,
+          "visible": true,
+          "colorIndex": 7,
+          "color": 16777215
+        },
+        "Border": {
+          "name": "Border",
+          "frozen": false,
+          "visible": true,
+          "colorIndex": 7,
+          "color": 16777215
+        },
+        "ForbiddenZone3": {
+          "name": "ForbiddenZone3",
+          "frozen": false,
+          "visible": true,
+          "colorIndex": 7,
+          "color": 16777215
+        },
+        "ForbiddenZone6": {
+          "name": "ForbiddenZone6",
+          "frozen": false,
+          "visible": true,
+          "colorIndex": 7,
+          "color": 16777215
+        },
+        "ForbiddenZone7": {
+          "name": "ForbiddenZone7",
+          "frozen": false,
+          "visible": true,
+          "colorIndex": 7,
+          "color": 16777215
+        },
+        "ForbiddenZone8": {
+          "name": "ForbiddenZone8",
+          "frozen": false,
+          "visible": true,
+          "colorIndex": 7,
+          "color": 16777215
+        },
+        "ForbiddenZone5": {
+          "name": "ForbiddenZone5",
+          "frozen": false,
+          "visible": true,
+          "colorIndex": 7,
+          "color": 16777215
+        },
+        "ForbiddenZone4": {
+          "name": "ForbiddenZone4",
+          "frozen": false,
+          "visible": true,
+          "colorIndex": 7,
+          "color": 16777215
+        },
+        "ForbiddenZone1": {
+          "name": "ForbiddenZone1",
+          "frozen": false,
+          "visible": true,
+          "colorIndex": 7,
+          "color": 16777215
+        },
+        "ForbiddenZone2": {
+          "name": "ForbiddenZone2",
+          "frozen": false,
+          "visible": true,
+          "colorIndex": 7,
+          "color": 16777215
+        }
+      }
+    }
+  },
+  "blocks": {
+    "*Model_Space": {
+      "handle": "20",
+      "ownerHandle": "1F",
+      "layer": "0",
+      "name": "*Model_Space",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "name2": "*Model_Space",
+      "xrefPath": ""
+    },
+    "*Paper_Space": {
+      "handle": "1C",
+      "ownerHandle": "1B",
+      "paperSpace": true,
+      "layer": "0",
+      "name": "*Paper_Space",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "name2": "*Paper_Space",
+      "xrefPath": ""
+    }
+  },
+  "entities": [
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "x": 0,
+          "y": -13.73,
+          "z": 0
+        }
+      ],
+      "handle": "6F",
+      "ownerHandle": "1F",
+      "layer": "Border",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 0,
+          "y": -13.73,
+          "z": 0
+        },
+        {
+          "x": 2.76,
+          "y": -13.73,
+          "z": 0
+        }
+      ],
+      "handle": "70",
+      "ownerHandle": "1F",
+      "layer": "Border",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 2.76,
+          "y": -13.73,
+          "z": 0
+        },
+        {
+          "x": 2.76,
+          "y": -21.22,
+          "z": 0
+        }
+      ],
+      "handle": "71",
+      "ownerHandle": "1F",
+      "layer": "Border",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 2.76,
+          "y": -21.22,
+          "z": 0
+        },
+        {
+          "x": 0,
+          "y": -43.7,
+          "z": 0
+        }
+      ],
+      "handle": "72",
+      "ownerHandle": "1F",
+      "layer": "Border",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 0,
+          "y": -43.7,
+          "z": 0
+        },
+        {
+          "x": 15.26,
+          "y": -43.7,
+          "z": 0
+        }
+      ],
+      "handle": "73",
+      "ownerHandle": "1F",
+      "layer": "Border",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 114.97,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "handle": "74",
+      "ownerHandle": "1F",
+      "layer": "Border",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 15.26,
+          "y": -43.7,
+          "z": 0
+        },
+        {
+          "x": 15.26,
+          "y": -42.25,
+          "z": 0
+        }
+      ],
+      "handle": "75",
+      "ownerHandle": "1F",
+      "layer": "Border",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 15.26,
+          "y": -42.25,
+          "z": 0
+        },
+        {
+          "x": 125.11,
+          "y": -42.25,
+          "z": 0
+        }
+      ],
+      "handle": "76",
+      "ownerHandle": "1F",
+      "layer": "Border",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 125.11,
+          "y": -42.25,
+          "z": 0
+        },
+        {
+          "x": 125.11,
+          "y": -17.25,
+          "z": 0
+        }
+      ],
+      "handle": "77",
+      "ownerHandle": "1F",
+      "layer": "Border",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 125.11,
+          "y": -17.25,
+          "z": 0
+        },
+        {
+          "x": 129.38,
+          "y": 1.26,
+          "z": 0
+        }
+      ],
+      "handle": "78",
+      "ownerHandle": "1F",
+      "layer": "Border",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 114.97,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "x": 114.97,
+          "y": 1.26,
+          "z": 0
+        }
+      ],
+      "handle": "79",
+      "ownerHandle": "1F",
+      "layer": "Border",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 114.97,
+          "y": 1.26,
+          "z": 0
+        },
+        {
+          "x": 129.38,
+          "y": 1.26,
+          "z": 0
+        }
+      ],
+      "handle": "7A",
+      "ownerHandle": "1F",
+      "layer": "Border",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 5,
+          "y": -13.73,
+          "z": 0
+        },
+        {
+          "x": 20.61,
+          "y": -13.73,
+          "z": 0
+        }
+      ],
+      "handle": "7C",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone3",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 20.61,
+          "y": -13.73,
+          "z": 0
+        },
+        {
+          "x": 20.61,
+          "y": -20.85,
+          "z": 0
+        }
+      ],
+      "handle": "7D",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone3",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 20.61,
+          "y": -20.85,
+          "z": 0
+        },
+        {
+          "x": 12.61,
+          "y": -20.85,
+          "z": 0
+        }
+      ],
+      "handle": "7E",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone3",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 12.61,
+          "y": -20.85,
+          "z": 0
+        },
+        {
+          "x": 12.61,
+          "y": -36.45,
+          "z": 0
+        }
+      ],
+      "handle": "7F",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone3",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 12.61,
+          "y": -36.45,
+          "z": 0
+        },
+        {
+          "x": 4.467129191,
+          "y": -36.45,
+          "z": 0
+        }
+      ],
+      "handle": "80",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone3",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 4.467129191,
+          "y": -36.45,
+          "z": 0
+        },
+        {
+          "x": 4.0410971625,
+          "y": -39.92,
+          "z": 0
+        }
+      ],
+      "handle": "81",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone3",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 4.0410971625,
+          "y": -39.92,
+          "z": 0
+        },
+        {
+          "x": 0.5172112213,
+          "y": -39.4873520819,
+          "z": 0
+        }
+      ],
+      "handle": "82",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone3",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 0.5172112213,
+          "y": -39.4873520819,
+          "z": 0
+        },
+        {
+          "x": 2.76,
+          "y": -21.22,
+          "z": 0
+        }
+      ],
+      "handle": "83",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone3",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 2.76,
+          "y": -21.22,
+          "z": 0
+        },
+        {
+          "x": 2.76,
+          "y": -13.73,
+          "z": 0
+        }
+      ],
+      "handle": "84",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone3",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 20.9,
+          "y": -28.7,
+          "z": 0
+        },
+        {
+          "x": 20.9,
+          "y": -39.2,
+          "z": 0
+        }
+      ],
+      "handle": "86",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone6",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 20.9,
+          "y": -28.7,
+          "z": 0
+        },
+        {
+          "x": 42.9,
+          "y": -28.7,
+          "z": 0
+        }
+      ],
+      "handle": "87",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone6",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 42.9,
+          "y": -28.7,
+          "z": 0
+        },
+        {
+          "x": 42.9,
+          "y": -39.2,
+          "z": 0
+        }
+      ],
+      "handle": "88",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone6",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 42.9,
+          "y": -39.2,
+          "z": 0
+        },
+        {
+          "x": 20.9,
+          "y": -39.2,
+          "z": 0
+        }
+      ],
+      "handle": "89",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone6",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 50.9,
+          "y": -28.7,
+          "z": 0
+        },
+        {
+          "x": 50.9,
+          "y": -39.2,
+          "z": 0
+        }
+      ],
+      "handle": "8B",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone7",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 50.9,
+          "y": -39.2,
+          "z": 0
+        },
+        {
+          "x": 85.9,
+          "y": -39.2,
+          "z": 0
+        }
+      ],
+      "handle": "8C",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone7",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 85.9,
+          "y": -39.2,
+          "z": 0
+        },
+        {
+          "x": 85.9,
+          "y": -28.7,
+          "z": 0
+        }
+      ],
+      "handle": "8D",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone7",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 85.9,
+          "y": -28.7,
+          "z": 0
+        },
+        {
+          "x": 50.9,
+          "y": -28.7,
+          "z": 0
+        }
+      ],
+      "handle": "8E",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone7",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 90.9,
+          "y": -28.7,
+          "z": 0
+        },
+        {
+          "x": 90.9,
+          "y": -39.2,
+          "z": 0
+        }
+      ],
+      "handle": "90",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone8",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 107.76,
+          "y": -17.25,
+          "z": 0
+        },
+        {
+          "x": 104.61,
+          "y": -17.25,
+          "z": 0
+        }
+      ],
+      "handle": "91",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone8",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 104.61,
+          "y": -17.25,
+          "z": 0
+        },
+        {
+          "x": 104.61,
+          "y": -8.01,
+          "z": 0
+        }
+      ],
+      "handle": "92",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone8",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 90.9,
+          "y": -39.2,
+          "z": 0
+        },
+        {
+          "x": 114.1,
+          "y": -39.2,
+          "z": 0
+        }
+      ],
+      "handle": "93",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone8",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 104.61,
+          "y": -8.01,
+          "z": 0
+        },
+        {
+          "x": 89.61,
+          "y": -8.01,
+          "z": 0
+        }
+      ],
+      "handle": "94",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone8",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 89.61,
+          "y": -8.01,
+          "z": 0
+        },
+        {
+          "x": 89.61,
+          "y": -12.01,
+          "z": 0
+        }
+      ],
+      "handle": "95",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone8",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 89.61,
+          "y": -12.01,
+          "z": 0
+        },
+        {
+          "x": 61.98,
+          "y": -12.01,
+          "z": 0
+        }
+      ],
+      "handle": "96",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone8",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 61.98,
+          "y": -12.01,
+          "z": 0
+        },
+        {
+          "x": 61.98,
+          "y": -23.01,
+          "z": 0
+        }
+      ],
+      "handle": "97",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone8",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 61.98,
+          "y": -23.01,
+          "z": 0
+        },
+        {
+          "x": 94.48,
+          "y": -23.01,
+          "z": 0
+        }
+      ],
+      "handle": "98",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone8",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 94.48,
+          "y": -23.01,
+          "z": 0
+        },
+        {
+          "x": 94.48,
+          "y": -28.7,
+          "z": 0
+        }
+      ],
+      "handle": "99",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone8",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 94.48,
+          "y": -28.7,
+          "z": 0
+        },
+        {
+          "x": 90.9,
+          "y": -28.7,
+          "z": 0
+        }
+      ],
+      "handle": "9A",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone8",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 57.98,
+          "y": -12.01,
+          "z": 0
+        },
+        {
+          "x": 57.98,
+          "y": -23.01,
+          "z": 0
+        }
+      ],
+      "handle": "9C",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone5",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 57.98,
+          "y": -23.01,
+          "z": 0
+        },
+        {
+          "x": 37.98,
+          "y": -23.01,
+          "z": 0
+        }
+      ],
+      "handle": "9D",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone5",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 37.98,
+          "y": -23.01,
+          "z": 0
+        },
+        {
+          "x": 37.98,
+          "y": -12.01,
+          "z": 0
+        }
+      ],
+      "handle": "9E",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone5",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 37.98,
+          "y": -12.01,
+          "z": 0
+        },
+        {
+          "x": 57.98,
+          "y": -12.01,
+          "z": 0
+        }
+      ],
+      "handle": "9F",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone5",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 33.98,
+          "y": -23.01,
+          "z": 0
+        },
+        {
+          "x": 33.98,
+          "y": -12.01,
+          "z": 0
+        }
+      ],
+      "handle": "A1",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone4",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 33.98,
+          "y": -12.01,
+          "z": 0
+        },
+        {
+          "x": 23.98,
+          "y": -12.01,
+          "z": 0
+        }
+      ],
+      "handle": "A2",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone4",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 23.98,
+          "y": -12.01,
+          "z": 0
+        },
+        {
+          "x": 23.98,
+          "y": -23.01,
+          "z": 0
+        }
+      ],
+      "handle": "A3",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone4",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 23.98,
+          "y": -23.01,
+          "z": 0
+        },
+        {
+          "x": 33.98,
+          "y": -23.01,
+          "z": 0
+        }
+      ],
+      "handle": "A4",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone4",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 5,
+          "y": -13.73,
+          "z": 0
+        },
+        {
+          "x": 5,
+          "y": -6.73,
+          "z": 0
+        }
+      ],
+      "handle": "A5",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone3",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 5,
+          "y": -6.73,
+          "z": 0
+        },
+        {
+          "x": 0,
+          "y": -6.73,
+          "z": 0
+        }
+      ],
+      "handle": "A6",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone3",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 0,
+          "y": -6.73,
+          "z": 0
+        },
+        {
+          "x": 0,
+          "y": -13.73,
+          "z": 0
+        }
+      ],
+      "handle": "A7",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone3",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 0,
+          "y": -13.73,
+          "z": 0
+        },
+        {
+          "x": 2.76,
+          "y": -13.73,
+          "z": 0
+        }
+      ],
+      "handle": "A8",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone3",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 15,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "x": 15,
+          "y": -10,
+          "z": 0
+        }
+      ],
+      "handle": "AA",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone1",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 15,
+          "y": -10,
+          "z": 0
+        },
+        {
+          "x": 72,
+          "y": -10,
+          "z": 0
+        }
+      ],
+      "handle": "AB",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone1",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 72,
+          "y": -10,
+          "z": 0
+        },
+        {
+          "x": 72,
+          "y": -4,
+          "z": 0
+        }
+      ],
+      "handle": "AC",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone1",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 72,
+          "y": -4,
+          "z": 0
+        },
+        {
+          "x": 61,
+          "y": -4,
+          "z": 0
+        }
+      ],
+      "handle": "AD",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone1",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 61,
+          "y": -4,
+          "z": 0
+        },
+        {
+          "x": 61,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "handle": "AE",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone1",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 61,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "x": 15,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "handle": "AF",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone1",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 114.1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "x": 114.1,
+          "y": -2.5,
+          "z": 0
+        }
+      ],
+      "handle": "B1",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone2",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 114.1,
+          "y": -2.5,
+          "z": 0
+        },
+        {
+          "x": 103.01,
+          "y": -2.5,
+          "z": 0
+        }
+      ],
+      "handle": "B2",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone2",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 103.01,
+          "y": -2.5,
+          "z": 0
+        },
+        {
+          "x": 103.01,
+          "y": -4,
+          "z": 0
+        }
+      ],
+      "handle": "B3",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone2",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 103.01,
+          "y": -4,
+          "z": 0
+        },
+        {
+          "x": 97.01,
+          "y": -4,
+          "z": 0
+        }
+      ],
+      "handle": "B4",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone2",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 97.01,
+          "y": -4,
+          "z": 0
+        },
+        {
+          "x": 97.01,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "handle": "B5",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone2",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 97.01,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "x": 114.1,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "handle": "B6",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone2",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 114.1,
+          "y": -4,
+          "z": 0
+        },
+        {
+          "x": 107.76,
+          "y": -4,
+          "z": 0
+        }
+      ],
+      "handle": "B7",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone8",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 107.76,
+          "y": -4,
+          "z": 0
+        },
+        {
+          "x": 107.76,
+          "y": -17.25,
+          "z": 0
+        }
+      ],
+      "handle": "B8",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone8",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    },
+    {
+      "type": "LINE",
+      "vertices": [
+        {
+          "x": 114.1,
+          "y": -4,
+          "z": 0
+        },
+        {
+          "x": 114.1,
+          "y": -39.2,
+          "z": 0
+        }
+      ],
+      "handle": "B9",
+      "ownerHandle": "1F",
+      "layer": "ForbiddenZone8",
+      "lineType": "Continuous",
+      "colorIndex": 7,
+      "color": 16777215
+    }
+  ]
+}
