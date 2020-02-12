@@ -1,0 +1,4 @@
+FROM influxdb:latest
+ADD /dataSource/ArenaInfluxBatch.txt dataSource.txt
+ADD entrypoint-influx.sh entrypoint.sh
+ENTRYPOINT ["./entrypoint.sh"]

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+       <meta charset="utf-8">
+   </head>
+   <body style="height: 100%; margin: 0">
+        <h1>Heatmap of ActiveShuttle</h1>
+       <table style="width:30%;float:left;height:20px">
+           <tr>
+               <th>rows:</th>
+               <th><label id="rowCount">10</label></th>
+               <th>columns:</th>
+               <th><label id="colCount">10</label></th>
+           </tr>
+           <tr>
+               <td></td>
+               <td>
+                   <input type="range" min="1" max="15" value="10" class="slider" id="rowRange">
+               </td>
+               <td></td>
+               <td>
+                   <input type="range" min="1" max="15" value="10" class="slider" id="colRange">
+               </td>
+               <td><input type="datetime-local" id="startTime" value="2018-09-18T21:24"></td>
+               <td><input type="datetime-local" id="endTime" value="2019-09-18T21:24"></td>
+               <td><button id="btn_req">request!</button></td>
+           </tr>
+       </table>
+
+       <div id="container" style="height: 80%"></div>
+       <script type="text/javascript" src="echarts.min.js"></script>
+        <script type="text/javascript" src="shine.js"></script>
+       <script type="text/javascript">
+           var sliderRow = document.getElementById("rowRange");
+           var outputRow = document.getElementById("rowCount");
+           var sliderCol = document.getElementById("colRange");
+           var outputCol = document.getElementById("colCount");
+           var startTimePicker = document.getElementById("startTime");
+           var endTimePicker = document.getElementById("endTime");
+           var rowCounts = parseInt(sliderRow.value);
+           var colCounts = parseInt(sliderCol.value);
+           var startTime = startTimePicker.value+":00Z";
+           var endTime = endTimePicker.value+":00Z";
+           var buttonReq = document.getElementById("btn_req");
+           var request = {
+               vehicleIds:["ActiveShuttle"],
+               startTime:startTime,
+               endTime:endTime,
+               rowCounts:rowCounts,
+               colCounts:colCounts
+           };
+
+
+
+
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom,"shine");
+var app={};
+app.title = 'Heatmap';
+
+var cols = [0,1,2,3,4,5,6,7,8,9];
+var rows = [0,1,2,3,4,5,6,7,8,9];
+
+var response={"ActiveShuttle":[[1.5556186008569984E-4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],[5.976955083052972E-4,0.0,1.6457274556944682E-4,0.0,0.0,0.0,0.0,0.0,0.0,0.0],[3.050833521914113E-4,6.885427429557179E-4,4.389089043151936E-4,0.0,0.0,0.0,0.0,0.0,0.0,0.0],[0.0,0.0,6.547000762107688E-4,0.0,0.0,0.0,0.0,0.0,0.0,0.0],[0.0,0.0,6.970612089803136E-4,0.0,0.0,0.0,0.0,0.0,0.0,0.0],[0.0,0.0,1.890990108971615E-4,9.297150606154218E-4,0.001081303927115578,9.93646246845795E-4,0.0010320207984034378,0.0010324576413006227,7.09399122986708E-4,1.2772532566804928E-4],[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.3960269369240424E-4,2.367467373970281E-4],[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.3697618472535624E-4,0.0],[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]]};
+
+//response = response.ActiveShuttle;
+function mapResponseToData(response){
+    response1=response.ActiveShuttle;
+   data1 = [];
+   for(var i in rows){
+       for(var j in cols){
+           data1.push([i,j,Math.round(response1[i][j]*100000)]);
+       }
+   }
+    data = data1.map(function (item) {
+        return [item[1], item[0], item[2] || '-'];
+    });
+   return data;
+}
+
+function refreshHeatmap(response) {
+
+   data = mapResponseToData(response);
+
+   option.xAxis.data=cols;
+   option.yAxis.data=rows;
+   option.series[0].data=data;
+   myChart.setOption(option, true);
+}
+var data = mapResponseToData(response);
+
+var option = {
+    tooltip: {
+        position: 'top'
+    },
+    animation: false,
+    grid: {
+        height: '50%',
+        y: '10%'
+    },
+    xAxis: {
+        type: 'category',
+        data: cols,
+        splitArea: {
+            show: true
+        }
+    },
+    yAxis: {
+        type: 'category',
+        data: rows,
+        splitArea: {
+            show: true
+        }
+    },
+    visualMap: {
+        min: 0,
+        max: 100,
+        calculable: true,
+        orient: 'horizontal',
+        left: 'center',
+        bottom: '15%'
+    },
+    series: [{
+        name: 'Average speed * 100000',
+        type: 'heatmap',
+        data: data,
+        label: {
+            normal: {
+                show: false
+            }
+        },
+        itemStyle: {
+            emphasis: {
+                shadowBlur: 10,
+                shadowColor: 'rgba(0, 0, 0, 0.5)'
+            }
+        }
+    }]
+};
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+           sliderRow.oninput = function() {
+               outputRow.innerHTML = this.value;
+               rowCounts=parseInt(this.value);
+           };
+           sliderCol.oninput = function() {
+               outputCol.innerHTML = this.value;
+               colCounts=parseInt(this.value);
+           };
+
+           buttonReq.onclick = function () {
+               requestJSONObj = {
+                   vehicleIds:["ActiveShuttle"],
+                   startTime:startTime,
+                   endTime:endTime,
+                   rowCounts:rowCounts,
+                   colCounts:colCounts
+               };
+               requestJSONStr = JSON.stringify(requestJSONObj);
+               myChart.showLoading();
+               console.log("sending request: "+JSON.stringify(request));
+               cols=[];
+               rows=[];
+               for(var i=0;i<rowCounts;i++) rows.push(i);
+               for(var j=0;j<colCounts;j++) cols.push(j);
+               var xhr = new XMLHttpRequest();   // new HttpRequest instance
+               xhr.open("POST", "http://localhost:8222/heatmap");
+               xhr.setRequestHeader("Content-Type", "application/json");
+               xhr.onreadystatechange = function () {
+                   if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                       console.log("new response:"+xhr.responseText);
+                       response=JSON.parse(xhr.responseText);
+                       refreshHeatmap(response);
+                       buttonReq.disabled=false;
+                   }
+                   myChart.hideLoading();
+               };
+               xhr.send(requestJSONStr);
+               buttonReq.disabled=true;
+               myChart.showLoading();
+           };
+       </script>
+   </body>
+</html>

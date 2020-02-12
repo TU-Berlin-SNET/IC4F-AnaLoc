@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>de.tuberlin.snet</groupId>
+  <version>0.0.1-RELEASE</version>
+  <artifactId>AnaLoc</artifactId>
+  <packaging>pom</packaging>
+
+
+  <name>microservices-analytics</name>
+  <description>Parent Pom for the microsevices analytics project</description>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.0.4.RELEASE</version>
+  </parent>
+  <modules>
+  	<module>support-services/discoveryService</module>
+    <module>support-services/monitorService</module>
+    <module>support-services/scaleService</module>
+    <module>support-services/zipkinService</module>
+    <module>core-services/analysisService</module>
+    <module>core-services/batchService</module>
+  </modules>
+</project>

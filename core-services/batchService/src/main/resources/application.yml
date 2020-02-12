@@ -1,0 +1,53 @@
+## please modify the configuration file located in ${project_root}config/core-services/batchService
+
+spring:
+  boot:
+    admin:
+      client:
+        instance:
+          service-base-url: http://monitor-service:8888
+          name: batch-service
+  influx:
+    url: http://influxdb:8086
+    user: gzzg                # replace here by real username
+    password: qweasd1234      # replace here by real password
+  mvc:
+    async:
+      request-timeout: 30000  # replace by timeout (unit: ms)
+  zipkin:
+    base-url: http://zipkin-service:9411/
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 0.1
+
+eureka:
+  instance:
+    preferIpAddress: true
+    hostname: batch-service
+  client:
+    service-url:
+      defaultZone: http://discovery-service:8761/eureka
+
+#*********************************************************#
+# replace followings by real map limits of the arena2036: #
+#*********************************************************#
+map:
+  xMin: 0
+  xMax: 10
+  yMin: 0
+  yMax: 10
+
+#*********************************************************#
+# replace followings by real configurations of InfluxDB:  #
+#*********************************************************#
+influxDBconf:
+  dbName: ArenaEmulator
+  measurement: dataFrame
+  positionX: position.x
+  positionY: position.y
+  vehicleId: vehicleId
+  deltaDistance: delta_distance
+  deltaTime: delta_t
+  speedFactor: 1000000

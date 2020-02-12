@@ -1,0 +1,146 @@
+# maintained by Yong Wu (y.wu.1@campus.tu-berlin.de)
+version: '2.3'
+
+services:
+  # for testing purpose
+  influxdb:
+    image: tuberlin/snet/analoc:influx_test
+    build:
+      context: .
+      dockerfile: Dockerfile-Influx
+    hostname: influxdb
+    volumes:
+      - ./data/influxdb:/var/lib/influxdb
+      - ./dataSource:/dataSource
+    ports:
+      - "8086:8086"
+    expose:
+      - "8086"
+    networks:
+      - backend
+
+  # for testing purpose
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    hostname: mosquitto
+    ports:
+      - "1883:1883"
+    expose:
+      - "1883"
+    networks:
+      - backend
+
+  ######################################################
+  ######################################################
+  discovery-service:
+    image: tuberlin/snet/analoc:discovery_service
+    hostname: discovery-service
+    mem_limit: 600m
+    ports:
+      - "8761:8761"
+    expose:
+      - "8761"
+    networks:
+      - backend
+
+  monitor-service:
+    image: tuberlin/snet/analoc:monitor_service
+    hostname: monitor-service
+    mem_limit: 500m
+    ports:
+      - "8888:8888"
+    expose:
+      - "8888"
+    networks:
+      - backend
+
+  flink-job:
+    image: ${FLINK_DOCKER_IMAGE_NAME:-tuberlin/snet/analoc:analysis_service}
+    hostname: flink-job
+    command: >
+      -t 30 --host=mosquitto --port=1883 -- /docker-entrypoint.sh job-cluster
+      --job-classname ${FLINK_JOB:-de.tuberlin.snet.AnaLoc.CoreServices.AnalysisService.AnalysisApplication}
+      -Djobmanager.rpc.address=flink-job -Dparallelism.default=${DEFAULT_PARALLELISM:-1}
+      ${SAVEPOINT_OPTIONS:-} ${FLINK_JOB_ARGUMENTS:-job.jar}
+      --spring.config.location=classpath:/,classpath:/config/,file:/config/
+    mem_limit: 500m
+    ports:
+      - "8081:8081"
+      - "8088:8088"
+      - "8111:8111"
+    expose:
+      - "8111"
+    depends_on:
+      - "mosquitto"
+      - "monitor-service"
+      - "discovery-service"
+    networks:
+      - backend
+    volumes:
+      - ./job-logger:/logger     #inside job-logger folder on host computer you can see the execution plan
+      - ./config/core-services/analysisService:/config    #!important, otherwise put the config file to /config/ folder manually
+    #restart: always
+
+  flink-taskmanager:
+    image: ${FLINK_DOCKER_IMAGE_NAME:-tuberlin/snet/analoc:analysis_service}
+    hostname: flink-taskmanager
+    command: -t 120 --host=flink-job --port=8111 -- /docker-entrypoint.sh task-manager -Djobmanager.rpc.address=flink-job
+    mem_limit: 1000m
+    depends_on:
+      - "mosquitto"
+      - "monitor-service"
+      - "discovery-service"
+      - "flink-job"
+    networks:
+      - backend
+    volumes:
+      - ./task-logger:/logger    #inside task-logger folder on host computer you can see the data points when using writer sink
+
+  batch-service:
+    image: tuberlin/snet/analoc:batch_service
+    hostname: batch-service
+    mem_limit: 500m
+    depends_on:
+      - "monitor-service"
+      - "discovery-service"
+    ports:
+      - "8222:8222"
+      - "8080:8080"
+    expose:
+      - "8222"
+    networks:
+      - backend
+    volumes:
+      - ./config/core-services/batchService:/config     #!important, otherwise put the config file to /config/ folder manually
+
+#  scale-service:
+#      image: tuberlin/snet/analoc:scale_service
+#      hostname: scale-service
+#      mem_limit: 500m
+#      depends_on:
+#        - "flink-taskmanager"
+#      extra_hosts:
+#        - "dockerhost:10.10.0.1"
+#      networks:
+#        - backend
+#
+  zipkin-service:
+    image: openzipkin/zipkin
+    hostname: zipkin-service
+    mem_limit: 2000m
+    environment:
+      - STORAGE_TYPE=mem
+    ports:
+      - "9411:9411"
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
+    #ipam:
+    #  config:
+    #    - subnet: 10.10.0.0/16
+
+
+

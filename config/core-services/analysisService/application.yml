@@ -1,0 +1,31 @@
+#spring:
+#  zipkin:
+#    base-url: http://zipkin-service:9411/
+#    sender:
+#      type: web
+#  sleuth:
+#    sampler:
+#      probability: 0.1
+
+eureka:
+  instance:
+    preferIpAddress: true
+    hostname: flink-job
+  client:
+    service-url:
+      defaultZone: http://discovery-service:8761/eureka
+
+mqtt:
+  hostname: mosquitto                         # replace here by real mqtt queue hostname
+  input:
+    topic: /arena2036/activeshuttle/position  # replace here by the real topic
+  output:
+    topic:
+      forbiddenArea: /warning/area            # replace here by the real warning topic
+      lowSpeed: /warning/speed                # replace here by the real warning topic
+
+filter:
+  configuration:
+    location: file:/config/json/map.json      # use classpath:json/arena2036.json for default map
+    speed:
+      threshold: 1.0                          # the threshold for low-speed filter
