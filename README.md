@@ -3,6 +3,8 @@
 
 AnaLoc is a sensor data analysis software package by TU-Berlin SNET, developed in the context of IC4F.
 
+You can find our related publication "Secure Real-time Communication and Computing Infrastructure for Industry 4.0 — Challenges and Opportunities" here: https://ieeexplore.ieee.org/document/8854499
+
 ---
 
 Table of contents of this README:
